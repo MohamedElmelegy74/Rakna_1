@@ -62,61 +62,62 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/page-1/images/icons.png
-    - assets/page-1/images/vector.png
-    - assets/page-1/images/google.png
-    - assets/page-1/images/vector-WQc.png
-    - assets/page-1/images/vector-Umz.png
-    - assets/page-1/images/icons-3cY.png
-    - assets/page-1/images/vector-rWY.png
-    - assets/page-1/images/vector-K1N.png
-    - assets/page-1/images/vector-R7S.png
-    - assets/page-1/images/vector-mgQ.png
-    - assets/page-1/images/vector-w1W.png
-    - assets/page-1/images/vector-QJQ.png
-    - assets/page-1/images/vector-ZqN.png
-    - assets/page-1/images/vector-NRJ.png
-    - assets/page-1/images/vector-o48.png
-    - assets/page-1/images/vector-2k4.png
-    - assets/page-1/images/vector-SY4.png
-    - assets/page-1/images/vector-hDe.png
-    - assets/page-1/images/vector-dvU.png
-    - assets/page-1/images/vector-mPi.png
-    - assets/page-1/images/vector-VgQ.png
-    - assets/page-1/images/vector-owz.png
-    - assets/page-1/images/vector-knY.png
-    - assets/page-1/images/vector-kj6.png
-    - assets/page-1/images/vector-xnY.png
-    - assets/page-1/images/vector-Sxc.png
-    - assets/page-1/images/vector-Azx.png
-    - assets/page-1/images/vector-yKS.png
-    - assets/page-1/images/vector-AhJ.png
-    - assets/page-1/images/vector-rn8.png
-    - assets/page-1/images/apple.png
-    - assets/page-1/images/icons-m1W.png
-    - assets/page-1/images/checkbox.png
-    - assets/page-1/images/vector-SwN.png
-    - assets/page-1/images/vector-SqA.png
-    - assets/page-1/images/logo.png
-    - assets/page-1/images/vector-e92.png
-    - assets/page-1/images/vector-ojz.png
-    - assets/page-1/images/vector-aov.png
-    - assets/page-1/images/vector-J84.png
-    - assets/page-1/images/illustration.png
-    - assets/page-1/images/vector-JTE.png
-    - assets/page-1/images/vector-pvG.png
-    - assets/page-1/images/group-36678.png
-    - assets/page-1/images/vector-btY.png
-    - assets/page-1/images/vector-djr.png
-    - assets/page-1/images/img.png
-    - assets/page-1/images/vector-n5S.png
-    - assets/page-1/images/icons-uHn.png
-    - assets/page-1/images/subtract.png
-    - assets/page-1/images/icons-fnL.png
-    - assets/page-1/images/vector-Vun.png
-    - assets/page-1/images/img-6tC.png
-    - assets/page-1/images/vector-joa.png
-    - assets/page-1/images/ilustraitor.png
+    - assets/page-1/images/
+    # - assets/page-1/images/icons.png
+    # - assets/page-1/images/vector.png
+    # - assets/page-1/images/google.png
+    # - assets/page-1/images/vector-WQc.png
+    # - assets/page-1/images/vector-Umz.png
+    # - assets/page-1/images/icons-3cY.png
+    # - assets/page-1/images/vector-rWY.png
+    # - assets/page-1/images/vector-K1N.png
+    # - assets/page-1/images/vector-R7S.png
+    # - assets/page-1/images/vector-mgQ.png
+    # - assets/page-1/images/vector-w1W.png
+    # - assets/page-1/images/vector-QJQ.png
+    # - assets/page-1/images/vector-ZqN.png
+    # - assets/page-1/images/vector-NRJ.png
+    # - assets/page-1/images/vector-o48.png
+    # - assets/page-1/images/vector-2k4.png
+    # - assets/page-1/images/vector-SY4.png
+    # - assets/page-1/images/vector-hDe.png
+    # - assets/page-1/images/vector-dvU.png
+    # - assets/page-1/images/vector-mPi.png
+    # - assets/page-1/images/vector-VgQ.png
+    # - assets/page-1/images/vector-owz.png
+    # - assets/page-1/images/vector-knY.png
+    # - assets/page-1/images/vector-kj6.png
+    # - assets/page-1/images/vector-xnY.png
+    # - assets/page-1/images/vector-Sxc.png
+    # - assets/page-1/images/vector-Azx.png
+    # - assets/page-1/images/vector-yKS.png
+    # - assets/page-1/images/vector-AhJ.png
+    # - assets/page-1/images/vector-rn8.png
+    # - assets/page-1/images/apple.png
+    # - assets/page-1/images/icons-m1W.png
+    # - assets/page-1/images/checkbox.png
+    # - assets/page-1/images/vector-SwN.png
+    # - assets/page-1/images/vector-SqA.png
+    # - assets/page-1/images/logo.png
+    # - assets/page-1/images/vector-e92.png
+    # - assets/page-1/images/vector-ojz.png
+    # - assets/page-1/images/vector-aov.png
+    # - assets/page-1/images/vector-J84.png
+    # - assets/page-1/images/illustration.png
+    # - assets/page-1/images/vector-JTE.png
+    # - assets/page-1/images/vector-pvG.png
+    # - assets/page-1/images/group-36678.png
+    # - assets/page-1/images/vector-btY.png
+    # - assets/page-1/images/vector-djr.png
+    # - assets/page-1/images/img.png
+    # - assets/page-1/images/vector-n5S.png
+    # - assets/page-1/images/icons-uHn.png
+    # - assets/page-1/images/subtract.png
+    # - assets/page-1/images/icons-fnL.png
+    # - assets/page-1/images/vector-Vun.png
+    # - assets/page-1/images/img-6tC.png
+    # - assets/page-1/images/vector-joa.png
+    # - assets/page-1/images/ilustraitor.png
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -129,11 +130,31 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-    # - family: Pacifico
-    #   fonts:
-    #     - asset: fonts/Pacifico-Regular.ttf
-
+  fonts:
+    - family: Actor
+      fonts:
+        - asset: assets/fonts/Actor-Regular.ttf
+    - family: Inria Sans
+      fonts:
+        - asset: assets/fonts/InriaSans-Light.ttf 
+        - asset: assets/fonts/InriaSans-Regular.ttf
+    - family: AgencyFB
+      fonts:
+        - asset: assets/fonts/AgencyFB-Bold.ttf
+    - family: Bebas
+      fonts:
+        -  asset: assets/fonts/Bebas-Regular.otf             
+        -  asset: assets/fonts/Bebas-Regular.ttf     
+    - family:  Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf   
+    - family: Gilroy-Black
+      fonts:
+        -  asset: assets/fonts/Gilroy-ExtraBold.otf 
+    - family: IBMPlexMono
+      fonts:
+        -  asset: assets/fonts/IBMPlexMono-Bold.ttf
+ 
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

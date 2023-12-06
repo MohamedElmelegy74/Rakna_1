@@ -5,23 +5,26 @@ class CutomInpuDataText extends StatelessWidget {
   final String? text;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: 325,
-          child: Text(
-            '$text',
-            style: const TextStyle(
-              color: Color(0xFFF8A00E),
-              fontSize: 13,
-              fontFamily: 'Inter',
-              fontWeight: FontWeight.w500,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 325,
+            child: Text(
+              '$text',
+              style: const TextStyle(
+                color: Color(0xFFF8A00E),
+                fontSize: 13,
+                fontFamily: 'Inter',
+                fontWeight: FontWeight.w500,
+              ),
             ),
-          ),
-        )
-      ],
+          )
+        ],
+      ),
     );
   }
 }
