@@ -14,7 +14,7 @@ class CutomInpuDataText extends StatelessWidget {
           SizedBox(
             width: 325,
             child: Text(
-              '$text',
+              text!,
               style: const TextStyle(
                 color: Color(0xFFF8A00E),
                 fontSize: 13,

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rakna/constants.dart';
-import 'package:rakna/pages/privacy_policey_page.dart';
 import 'package:rakna/widgets/custom_login_sginup_button.dart';
 import 'package:rakna/widgets/custom_textfield.dart';
 import 'package:rakna/widgets/custom_input_data_text.dart';
 
 class SginUp extends StatefulWidget {
-  SginUp({Key? key}) : super(key: key);
+  const SginUp({Key? key}) : super(key: key);
   static String id = 'RegisterPage';
 
   @override
@@ -32,12 +31,11 @@ class _SginUpState extends State<SginUp> {
               width: 500,
             ),
           ),
-          const Spacer(flex: 1),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: ListView(
               children: [
-                const Gap(115),
+                const Gap(80),
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
                   child: SizedBox(
@@ -55,7 +53,7 @@ class _SginUpState extends State<SginUp> {
                     ),
                   ),
                 ),
-                const Gap(25),
+                const Gap(20),
                 const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
@@ -69,28 +67,28 @@ class _SginUpState extends State<SginUp> {
                     ),
                   ),
                 ),
-                const Gap(35),
+                const Gap(30),
                 CutomInpuDataText(
                   text: 'Full Name',
                 ),
                 CustomFormTextField(
                   hintText: "Nader Hany Btats",
                 ),
-                const Gap(20),
+                const Gap(15),
                 CutomInpuDataText(
                   text: 'Email',
                 ),
                 CustomFormTextField(
                   hintText: "KarimElomda@gmail.com",
                 ),
-                const Gap(20),
+                const Gap(15),
                 CutomInpuDataText(
                   text: 'Phone Number',
                 ),
                 CustomFormTextField(
                   hintText: "01270113144",
                 ),
-                const Gap(30),
+                const Gap(25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -138,7 +136,7 @@ class _SginUpState extends State<SginUp> {
                     ),
                   ],
                 ),
-                const Gap(30),
+                const Gap(25),
                 CustomButton(
                   text: 'Sign Up',
                   onTap: () {
@@ -151,7 +149,7 @@ class _SginUpState extends State<SginUp> {
                     }
                   },
                 ),
-                const Gap(60),
+                const Gap(50),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -183,7 +181,6 @@ class _SginUpState extends State<SginUp> {
                     )
                   ],
                 ),
-                const Spacer(flex: 3),
               ],
             ),
           ),

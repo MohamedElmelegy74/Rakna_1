@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rakna/constants.dart';
-import 'package:rakna/widgets/custom_login_sginup_button.dart';
 import 'package:rakna/widgets/custom_sold_btn.dart';
 
 class PasswordConfirmedPage extends StatelessWidget {
   const PasswordConfirmedPage({super.key});
-
+  static String id = 'PasswordConfirmedPage';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
