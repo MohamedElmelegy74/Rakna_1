@@ -13,16 +13,16 @@ class Rakna extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PrivacyPoliceyPage(),
-      // PasswordConfirmedPage(),
+      home: /*PrivacyPoliceyPage(),*/
+          // PasswordConfirmedPage(),
 
-      // SginUp(),
+          SginUp(),
       debugShowCheckedModeBanner: false,
-      // routes: {
-      //   'LoginPage': (context) => const LoginPage(),
-      //   RegisterPage.id: (context) => RegisterPage(),
-      // },
-      // initialRoute: 'LoginPage',
+      routes: {
+        PrivacyPoliceyPage.id: (context) => const PrivacyPoliceyPage(),
+        SginUp.id: (context) => SginUp(),
+      },
+      initialRoute: 'SginUp',
     );
   }
 }

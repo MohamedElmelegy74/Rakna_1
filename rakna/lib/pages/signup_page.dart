@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rakna/constants.dart';
+import 'package:rakna/pages/privacy_policey_page.dart';
 import 'package:rakna/widgets/custom_button.dart';
 import 'package:rakna/widgets/custom_textfield.dart';
-import 'package:rakna/widgets/cutom_input_data_text.dart';
+import 'package:rakna/widgets/custom_input_data_text.dart';
 
-class SginUp extends StatelessWidget {
+class SginUp extends StatefulWidget {
   SginUp({Key? key}) : super(key: key);
   static String id = 'RegisterPage';
+
+  @override
+  _SginUpState createState() => _SginUpState();
+}
+
+class _SginUpState extends State<SginUp> {
+  bool agreeToTerms = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColor,
       body: Stack(
-        //To be able to place the image on the UI.
         children: [
           Positioned(
             top: -68,
@@ -87,17 +94,15 @@ class SginUp extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                      width: 23.50,
-                      height: 23.41,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: ShapeDecoration(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          side: const BorderSide(width: 1),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      ),
+                    Checkbox(
+                      value: agreeToTerms,
+                      onChanged: (value) {
+                        setState(
+                          () {
+                            agreeToTerms = value!;
+                          },
+                        );
+                      },
                     ),
                     const Text(
                       ' I agree to the terms of service and  ',
@@ -110,15 +115,23 @@ class SginUp extends StatelessWidget {
                         height: 0.12,
                       ),
                     ),
-                    const Text(
-                      ' privacy policy',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Color(0xFF4D97F6),
-                        fontSize: 15,
-                        fontFamily: 'Bebas',
-                        fontWeight: FontWeight.w400,
-                        height: 0.12,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          'PrivacyPoliceyPage',
+                        );
+                      },
+                      child: const Text(
+                        ' privacy policy',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xFF4D97F6),
+                          fontSize: 15,
+                          fontFamily: 'Bebas',
+                          fontWeight: FontWeight.w400,
+                          height: 0.12,
+                        ),
                       ),
                     ),
                   ],
@@ -126,6 +139,15 @@ class SginUp extends StatelessWidget {
                 const Gap(30),
                 CustomButton(
                   text: 'Sign Up',
+                  onTap: () {
+                    if (agreeToTerms) {
+                      // Add your sign-up logic here
+                      print('User agreed to terms. Signing up...');
+                    } else {
+                      // Show an alert or handle the case where terms are not agreed
+                      print('User must agree to terms before signing up.');
+                    }
+                  },
                 ),
                 const Gap(60),
                 Row(
@@ -143,19 +165,20 @@ class SginUp extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: const Text(
-                          ' Sign In.',
-                          style: TextStyle(
-                            color: Color(0xFF5C96FF),
-                            fontSize: 16,
-                            fontFamily: 'Inria Sans',
-                            fontWeight: FontWeight.w700,
-                            height: 0.09,
-                          ),
-                        ))
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text(
+                        ' Sign In.',
+                        style: TextStyle(
+                          color: Color(0xFF5C96FF),
+                          fontSize: 16,
+                          fontFamily: 'Inria Sans',
+                          fontWeight: FontWeight.w700,
+                          height: 0.09,
+                        ),
+                      ),
+                    )
                   ],
                 ),
                 const Spacer(flex: 3),

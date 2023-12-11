@@ -6,6 +6,7 @@ import 'package:rakna/widgets/custom_privacy_text.dart';
 
 class PrivacyPoliceyPage extends StatelessWidget {
   const PrivacyPoliceyPage({super.key});
+  static String id = 'PrivacyPoliceyPage';
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +23,16 @@ class PrivacyPoliceyPage extends StatelessWidget {
                 flex: 2,
               ),
             ), //spacerTop
-            const Text(
-              'privcy policey',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color(0xFFF8A00E),
-                fontSize: 48,
-                fontFamily: 'Gilroy-Black',
-                fontWeight: FontWeight.w400,
+            GestureDetector(
+              child: const Text(
+                'privcy policey',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFFF8A00E),
+                  fontSize: 48,
+                  fontFamily: 'Gilroy-Black',
+                  fontWeight: FontWeight.w400,
+                ),
               ),
             ),
             const Gap(30),
@@ -38,8 +41,13 @@ class PrivacyPoliceyPage extends StatelessWidget {
             const Spacer(
               flex: 3,
             ),
-            CustomButton(
-              text: 'Back to login',
+            GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: CustomButton(
+                text: 'Back to login',
+              ),
             ),
             const Expanded(
               child: Spacer(
