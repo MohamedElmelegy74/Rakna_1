@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rakna/constants.dart';
 import 'package:rakna/pages/privacy_policey_page.dart';
-import 'package:rakna/widgets/custom_button.dart';
+import 'package:rakna/widgets/custom_login_sginup_button.dart';
 import 'package:rakna/widgets/custom_textfield.dart';
 import 'package:rakna/widgets/custom_input_data_text.dart';
 
@@ -38,12 +38,12 @@ class _SginUpState extends State<SginUp> {
             child: ListView(
               children: [
                 const Gap(115),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
-                  child: Container(
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  child: SizedBox(
                     width: 237,
                     height: 36,
-                    child: const Text(
+                    child: Text(
                       'Sign Up',
                       style: TextStyle(
                         color: Colors.white,
@@ -95,6 +95,8 @@ class _SginUpState extends State<SginUp> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Checkbox(
+                      activeColor: Colors.white,
+                      checkColor: Colors.black,
                       value: agreeToTerms,
                       onChanged: (value) {
                         setState(

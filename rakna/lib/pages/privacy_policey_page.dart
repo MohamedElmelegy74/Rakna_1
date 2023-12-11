@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rakna/constants.dart';
-import 'package:rakna/widgets/custom_button.dart';
 import 'package:rakna/widgets/custom_privacy_text.dart';
+import 'package:rakna/widgets/custom_sold_btn.dart';
 
 class PrivacyPoliceyPage extends StatelessWidget {
   const PrivacyPoliceyPage({super.key});
@@ -42,13 +42,14 @@ class PrivacyPoliceyPage extends StatelessWidget {
               flex: 3,
             ),
             GestureDetector(
-              onTap: () {
-                Navigator.pop(context);
-              },
-              child: CustomButton(
-                text: 'Back to login',
-              ),
-            ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: const CustomSoldBtn(
+                  text: 'Back ',
+                  width: 120,
+                  height: 39,
+                )),
             const Expanded(
               child: Spacer(
                 flex: 1,

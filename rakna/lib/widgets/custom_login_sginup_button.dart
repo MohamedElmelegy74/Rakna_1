@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  CustomButton({this.onTap, required this.text});
+  const CustomButton({
+    this.onTap,
+    required this.text,
+  });
 
   final VoidCallback? onTap;
   final String text;
@@ -20,7 +23,10 @@ class CustomButton extends StatelessWidget {
             decoration: ShapeDecoration(
               color: const Color(0xFF4B4A4A),
               shape: RoundedRectangleBorder(
-                side: const BorderSide(width: 1, color: Color(0xFFF8A00E)),
+                side: const BorderSide(
+                  width: 1,
+                  color: Color(0xFFF8A00E),
+                ),
                 borderRadius: BorderRadius.circular(21),
               ),
               shadows: const [
@@ -29,7 +35,7 @@ class CustomButton extends StatelessWidget {
                   blurRadius: 19.80,
                   offset: Offset(0, 5),
                   spreadRadius: -2,
-                )
+                ),
               ],
             ),
             child: Column(
@@ -44,7 +50,7 @@ class CustomButton extends StatelessWidget {
                   children: [
                     Center(
                       child: Text(
-                        '$text',
+                        text,
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                           color: Color(0xFFEBE7E7),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rakna/constants.dart';
-import 'package:rakna/widgets/custom_button.dart';
+import 'package:rakna/widgets/custom_login_sginup_button.dart';
+import 'package:rakna/widgets/custom_sold_btn.dart';
 
 class PasswordConfirmedPage extends StatelessWidget {
   const PasswordConfirmedPage({super.key});
@@ -10,7 +11,7 @@ class PasswordConfirmedPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColor,
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -19,14 +20,14 @@ class PasswordConfirmedPage extends StatelessWidget {
             const Spacer(
               flex: 2,
             ), //spacerTop
-            Container(
+            SizedBox(
               width: 257.15,
               height: 237.75,
               child: Image.asset(
                 'assets/page-1/images/star.png',
               ),
             ),
-            Gap(90), //Gap Between Imgae And PasswordText
+            const Gap(90), //Gap Between Imgae And PasswordText
             const Text(
               'Password Confirmed',
               style: TextStyle(
@@ -38,7 +39,7 @@ class PasswordConfirmedPage extends StatelessWidget {
                 letterSpacing: -0.30,
               ),
             ),
-            Gap(50), //Gap Between PasswordText And Succesfully Text
+            const Gap(50), //Gap Between PasswordText And Succesfully Text
             const SizedBox(
               width: 257,
               child: Text(
@@ -52,11 +53,14 @@ class PasswordConfirmedPage extends StatelessWidget {
                 ),
               ),
             ),
-            Gap(100),
-            CustomButton(
+            const Gap(100),
+            const CustomSoldBtn(
               text: 'Back to login',
+              width: 289,
+              height: 46,
             ),
-            Spacer(
+
+            const Spacer(
               flex: 2,
             ), //spacerbottom
           ],
