@@ -18,10 +18,8 @@ class PrivacyPoliceyPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Expanded(
-              child: Spacer(
-                flex: 2,
-              ),
+            const Spacer(
+              flex: 2,
             ), //spacerTop
             GestureDetector(
               child: const Text(
