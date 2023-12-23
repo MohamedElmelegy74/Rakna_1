@@ -129,14 +129,12 @@ class _SginUpState extends State<SginUp> {
                           );
                         },
                         child: const Text(
-                          ' privacy policy',
+                          ' privacy police',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Color(0xFF4D97F6),
                             fontSize: 15,
                             fontFamily: 'Bebas',
-                            fontWeight: FontWeight.w400,
-                            height: 0.12,
                           ),
                         ),
                       ),
@@ -170,19 +168,12 @@ class _SginUpState extends State<SginUp> {
                         onTap: () {
                           Navigator.pop(context);
                         },
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.pop(context);
-                          },
-                          child: const Text(
-                            ' Sign In.',
-                            style: TextStyle(
-                              color: Color(0xFF5C96FF),
-                              fontSize: 16,
-                              fontFamily: 'Inria Sans',
-                              fontWeight: FontWeight.w700,
-                              height: 0.09,
-                            ),
+                        child: const Text(
+                          ' Sign In.',
+                          style: TextStyle(
+                            color: Color(0xFF5C96FF),
+                            fontSize: 16,
+                            fontFamily: 'Inria Sans',
                           ),
                         ),
                       )
